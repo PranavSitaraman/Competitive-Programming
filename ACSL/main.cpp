@@ -12,6 +12,8 @@
 #include "Practice/ACSL Quine-McClusky/ACSL Quine-McClusky.h"
 #include "Contest/2021-2022/ACSL Fibonacci Cypher/ACSL Fibonacci Cypher.h"
 #include "Contest/2021-2022/ACSL Fibonacci and Pascal/ACSL Fibonacci and Pascal.h"
+#include "Contest/2021-2022/ACSL Fibonacci and Mandelbrot/ACSL Fibonacci and Mandelbrot.h"
+#include "Contest/2021-2022/ACSL Finals/ACSL Finals 2022.h"
 int main()
 {
 	char funcNames[][100] =
@@ -31,6 +33,9 @@ int main()
 		"Practice - ACSL Quine-McClusky",
 		"Contest - 2021 to 2022 - ACSL Fibonacci Cypher",
 		"Contest - 2021 to 2022 - ACSL Fibonacci and Pascal",
+		"Contest - 2021 to 2022 - ACSL Fibonacci and Mandelbrot",
+		"Contest - 2021 to 2022 - ACSL Finals Problem 1",
+		"Contest - 2021 to 2022 - ACSL Finals Problem 2"
 	};
 	void (*funcs[])() =
 	{
@@ -48,7 +53,10 @@ int main()
 		acslfibclock,
 		acslquinemcclusky,
 		acslfibcypher,
-		acslfibandpascal
+		acslfibandpascal,
+		acslfibonaccimandelbrot,
+		acsl2022one,
+		acsl2022two
 	};
 	int choice;
 	int maxFuncs = sizeof(funcs) / sizeof(funcs)[0];
