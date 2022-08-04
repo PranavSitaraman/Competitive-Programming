@@ -31,6 +31,7 @@
 #include "Contest/January 2022 Silver/January 2022 Silver.h"
 #include "Contest/February 2022 Silver/February 2022 Silver.h"
 #include "Contest/US Open 2022 Silver/US Open 2022 Silver.h"
+#include "Training/Chapter 3/3.1/3.1.h"
 int main()
 {
 	char funcNames[][100] =
@@ -75,7 +76,8 @@ int main()
 		"Contest - February 2022 Silver - USACO Email Filing",
 		"Contest - US Open 2022 Silver - USACO Visits",
 		"Contest - US Open 2022 Silver - USACO Subset Equality",
-		"Contest - US Open 2022 Silver - USACO Cow Operations"
+		"Contest - US Open 2022 Silver - USACO Cow Operations",
+		"Training - Chapter 3 - 3.1"
 	};
 	void (*funcs[])() =
 	{
@@ -119,7 +121,8 @@ int main()
 		emailfiling,
 		usacovisits,
 		usacosubsetequality,
-		usacocowoperations
+		usacocowoperations,
+		threepointone
 	};
 	int choice;
 	int maxFuncs = sizeof(funcs) / sizeof(funcs)[0];
